@@ -26,10 +26,19 @@ shinyUI(
       ),
       # Create a spot for the barplot
       mainPanel(
+        tabsetPanel(
+          tabPanel("Output",
+        
+        
         plotOutput("votePlot"),
         h3('Mean of Votes for Republican Candidate(%) '),
         verbatimTextOutput("mean_value")
+          ),
+        tabPanel("Documentation",
+                 p(h4("Votes for Republican Candidate in Presidential Elections:")),
+                 helpText("This application show the results of vote in selected year per state, and calculate the Mean ")
+                
       )
     )
   )
-)
+)))
