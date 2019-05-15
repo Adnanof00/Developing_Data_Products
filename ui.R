@@ -22,7 +22,7 @@ shinyUI(
         hr(),
         helpText("This shiny app shows Votes for Republican Candidate in Presidential Elections per State"),
         hr(),
-        helpText("Source code can be found at https://github.com/Adnanof00/DDP/")
+        helpText("Source code can be found at https://github.com/Adnanof00/Developing_Data_Products")
       ),
       # Create a spot for the barplot
       mainPanel(
